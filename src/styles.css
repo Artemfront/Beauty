@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .container {
+        max-width:1110px;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .fixedHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@layer components {
+    .btn-accent {
+        @apply w-44 h-11 border-2 rounded-full font-normal border-white flex items-center bg-accent 
+    }
+    .btn-white {
+        @apply w-44 h-11 border-2 rounded-full font-normal border-accent flex items-center bg-white my-auto 
+    }
+}

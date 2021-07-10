@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>tailwind CSS</title>
+    <link rel="stylesheet" href="compiled.css">
+</head>
+<body class = "overflow-x-hidden">
+
+    <!-- node_modules/.bin/postcss src/styles.css -o compiled.css -->
+
+    <div class = "w-full h-8 md:h-12">
+        <div class="container">
+            <nav class = "w-112 mx-auto text-base md:text-base mobile:text-xs hidden md:flex flex-row justify-between pt-2 roboto">
+                <a href="#" class="hover:text-green-400">Доставка</a>
+                <a href="#" class="hover:text-green-400">Оплата</a>
+                <a href="#" class="hover:text-green-400">Отзывы</a>
+                <a href="#" class="hover:text-green-400">Вопрос - ответ</a>
+                <a href="#" class="hover:text-green-400">Контакты</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class = "w-full h-16 md:h-32 flex items-center bg-white z-50" id="header">
+        <div class="container flex flex-row justify-between items-center md:items-stretch bg-white z-50">
+            <div class = "flex flex-row justify-between items-center ml-0 h-16 w-32 sm:w-64 mobile:ml-2 bg-white z-50">
+                <img src="./img/logo.png" alt="" class = "w-10 h-10 sm:w-40 sm:h-24 bg-white z-50">
+                <span class = "roboto font-bold text-lg sm:text-4xl my-auto uppercase text-accent ml-3">Beauty</span>
+            </div>
+            <div class = "w-32 sm:w-80 h-16 flex flex-col sm:flex-row justify-between mr-2 mobile:mr-5">
+                <span class = "my-auto text-xs sm:text-base mx-auto">8 (812) 123-45-67</span>
+                <div class = "btn-white w-32 h-6 sm:w-44 sm:h-11">
+                    <a href="#" class = "w-max h-8 mx-auto font-normal text-xs sm:text-base mt-3 sm:mt-0 hover:text-green-700">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "w-full h-8 md:h-12 flex items-center">
+        <div class="container">
+            <nav class = "hidden md:flex flex-row justify-between w-10/12 md:w-169 mx-auto roboto text-xs md:text-base">
+                <a href="#" class="hover:text-green-400">Парикмахерская</a>
+                <a href="#" class="hover:text-green-400">Барбершоп</a>
+                <a href="#" class="hover:text-green-400">Маникюр</a>
+                <a href="#" class="hover:text-green-400">Педикюр</a>
+                <a href="#" class="hover:text-green-400">Массаж</a>
+                <a href="#" class="hover:text-green-400">Мебель</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class = "w-full h-96 lg:h-intro bg-cover bg-center overflow-x-hidden">
+        <div class="container h-96 lg:h-intro flex items-center mt-0">
+            <div class = "h-intro w-full absolute left-0 hidden lg:block">
+                <img src="./img/intro.png" alt="" class = "h-96 lg:h-full w-full hidden md:block">
+            </div>
+            <div class = "w-80 h-56 flex flex-col justify-between ml-3 xl:ml-0 -mb-5 md:-mb-5 lg:mb-0">
+                <span class = "text-black lg:text-white text-3xl tablet:text-5xl robot font-bold z-30">Супер кресло</span>
+                <span class = "text-black lg:text-white w-44 tablet:w-80 text-sm z-30">Текст акции всегда отражает суть, а не просто
+                болтовню, поэтому внимательнее</span>
+                <div class = "btn-accent z-10">
+                    <a href="#" class = "w-max h-8 mx-auto font-normal text-white z-30 hover:text-black">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full lg:h-goodsBig bg-gray lg:flex lg:flex-col lg:justify-between">
+        <div class = "pt-8 lg:pt-40 bg-gray">
+            <div class="container flex flex-col justify-between">
+                <span class = "font-bold text-2xl robot ml-3 xl:ml-0 xl:mb-3">Специальные предложения</span>
+                <div class = " lg:h-goodsItem h-containerGoods flex flex-col lg:flex-row justify-around lg:justify-between lg:items-stretch items-center">
+                    <div class = "w-goodsItem h-goodsItem flex flex-col justify-around items-center bg-white mx-3 md:mx-0">
+                        <img src="./img/goods.png" alt="">
+                        <span class = "w-nameItem text-center">Парикмахерское кресло «Норм» гидравлическое</span>
+                        <span class = "text-lg roboto font-medium">9 900 ₽</span>
+                        <div class = "w-44 h-11 border border-2 rounded-full font-normal border-white flex items-center bg-accent">
+                            <a href="#" class = "w-max h-8 mx-auto font-normal text-white">Купить</a>
+                        </div>
+                    </div>
+                    <div class = "w-goodsItem h-goodsItem flex flex-col justify-around items-center bg-white mx-0 md:mx-3">
+                        <img src="./img/goods.png" alt="">
+                        <span class = "w-nameItem text-center">Парикмахерское кресло «Норм» гидравлическое</span>
+                        <span class = "text-lg roboto font-medium">9 900 ₽</span>
+                        <div class = "w-44 h-11 border border-2 rounded-full font-normal border-white flex items-center bg-accent">
+                            <a href="#" class = "w-max h-8 mx-auto font-normal text-white">Купить</a>
+                        </div>
+                    </div>
+                    <div class = "w-goodsItem h-goodsItem flex flex-col justify-around items-center bg-white mx-0 md:mx-3">
+                        <img src="./img/goods.png" alt="">
+                        <span class = "w-nameItem text-center">Парикмахерское кресло «Норм» гидравлическое</span>
+                        <span class = "text-lg roboto font-medium">9 900 ₽</span>
+                        <div class = "w-44 h-11 border border-2 rounded-full font-normal border-white flex items-center bg-accent">
+                            <a href="#" class = "w-max h-8 mx-auto font-normal text-white">Купить</a>
+                        </div>
+                    </div>
+                    <div class = "w-goodsItem h-goodsItem flex flex-col justify-around items-center bg-white mx-0 md:mx-3">
+                        <img src="./img/goods.png" alt="">
+                        <span class = "w-nameItem text-center">Парикмахерское кресло «Норм» гидравлическое</span>
+                        <span class = "text-lg roboto font-medium">9 900 ₽</span>
+                        <div class = "w-44 h-11 border border-2 rounded-full font-normal border-white flex items-center bg-accent">
+                            <a href="#" class = "w-max h-8 mx-auto font-normal text-white">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="subscribe h-subscribeItem lg:h-subscribe mb-24 hidden lg:block">
+            <div class="container h-subscribeItem lg:h-subscribe flex flex-col lg:flex-row justify-between items-center lg:items-stretch">
+                <div class = "w-subscribeItem h-subscribe lg:h-subscribe bg-accent flex items-center justify-around mx-2 xl:mx-0 mt-5 lg:mt-0">
+                    <div class = "flex flex-col justify-between h-36 w-64">
+                        <span class = "font-bold text-base text-white w-64 h-4 mx-2 xl:mx-0">Получайте бонусы и подарки</span>
+                        <span class = "text-white text-sm w-64 font-normal roboto text-xs mx-2 xl:mx-0">Каждый месяц разыгрываем
+                        10 000 рублей для наших клиентов</span>
+                        <input type="text" class = "w-56 rounded-full px-4 mx-2 xl:mx-0" placeholder="Введите email">
+                    </div>
+                    <img src="./img/envelope.png" alt="" class="mx-2 xl:mx-0 hidden md:block">
+                </div>
+                <div class = "w-subscribeItem h-subscribe lg:h-subscribe bg-accent flex items-center mx-2 xl:mx-0">
+                    <div class="ml-10 flex flex-col justify-around h-36 w-64">
+                        <span class = "text-white font-bold roboto text-base">Заходите к нам</span>
+                        <span class = "text-white font-normal roboto text-sm w-36">Более 300 магазинов
+                        по всей России</span>
+                        <div class = "btn-accent">
+                            <a href="#" class = "w-max h-8 mx-auto font-normal text-white">Карта магазинов</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "h-32 w-full bg-white my-7 mobile:my-0">
+        <div class="container h-32 flex items-center justify-around mobile:justify-between flex-col mobile:flex-row">
+            <div class="h-5 mx-4 tablet:mx-3 xl:mx-0">
+                <div class = "w-32 lg:w-60 flex flex-row justify-between h-5">
+                    <img src="./img/youtube.png" alt="" class = "h-4">
+                    <img src="./img/vk.png" alt="" class = "h-4">
+                    <img src="./img/facebook.png" alt="" class = "h-5">
+                    <img src="./img/instagram.png" alt="">
+                </div>
+            </div>
+            <div class = "roboto text-xs lg:text-sm font-normal mx-3 xl:mx-0 hidden tablet:block">
+                <span>198555, Невский пр. 140, офис 140</span>
+            </div>
+            <div class = "w-80 flex flex-col sm:flex-row justify-between items-center mx-3 xl:mx-0">
+                <span class ="text-xs lg:text-base my-3 sm:my-0">8 (812) 123-45-67</span>
+                <div class = "btn-white w-32 h-6 lg:w-44 lg:h-11">  
+                    <a href="#" class = "w-max h-8 mx-auto font-normal text-xs lg:text-base mt-3 lg:mt-0">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "w-full h-16 bg-gray h-32 mobile:h-16">
+        <div class="container bg-gray text-footer relative top-6">
+            <div class = "flex flex-row justify-between">
+                <span class = "mx-3 xl:mx-0 text-xs sm:text-base">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</span>
+                <span class = "mx-3 xl:mx-0 text-xs sm:text-base">Политика конфиденциальности</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
